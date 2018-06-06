@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pesquisa de sala</title>
+	</head>
+	<body>
+		<h1>Eleições de sala</h1>
+		<fieldset>
+				<legend>Sexo</legend>
+
+				<label>
+					<input type="radio" name="sexo" value="masculino"checked > Masculino
+				</label>
+				<label>
+					<input type="radio" name="sexo" value="feminino"> Feminino
+				</label>
+		</fieldset>
+			<br><br>
+
+		<label for="cidade">Bairro onde vota:</label>
+			<select id="bairro" name="bairro">
+				<option disabled selected>Selecione um bairro</option>
+				<option value="nat">Bom Pastor</option>
+				<option value="mos">Alecrim</option>
+				<option value="rec">Cidade Alta</option>
+				<option value="car">Cidade Esperança</option>
+				<option value="bsb">Felipe Camarão</option>
+				<option value="poa">Lagoa Nova</option>
+			</select>
+			<br><br>
+
+		<fieldset>
+			<legend>Em quem você vota para lider da sala</legend>
+			<label>
+			<input type="radio" name="lula" value="lula">
+			Lula
+			</label>
+			<label>
+			<input type="radio" name="ciro" value="ciro">
+			Ciro
+			</label>
+			<label>
+			<input type="radio" name="marina" value="marina">
+			Marina
+			</label>
+		</fieldset>
+		<br><br>
+
+		<fieldset>
+			<legend>Em quem você vota para vice-lider da sala</legend>
+			<label>
+			<input type="radio" name="jamanta" value="jamanta" checked>
+			Jamanta
+			</label>
+			<label>
+			<input type="radio" name="bolsominio" value="bolsominio">
+			Bolsominion
+			</label>
+			<label>
+			<input type="radio" name="neide" value="neide">
+			Neide
+			</label>
+		</fieldset>
+			<br><br>
+
+			<label for="mensagem">Mensagem</label><br>
+			<textarea id="mensagem" name="mensagem" name="mensagem" placeholder=">Digite aqui<" cols="30" rows="5" style="resize: none;">
+			</textarea>
+			<br><br>
+
+			<input type="submit" value="Enviar">
+
+	</body>
+</html>

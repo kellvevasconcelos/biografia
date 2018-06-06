@@ -6,15 +6,15 @@
 	</head>
 	<body>
 <!-- formulários ex: login e senha; pesquisa: cadastro.. que podem estar dentro de uma mesma página.-->
-		<form method="" action="">
+		<form method="" action="" enctype="mulpart/form-data">
 			<label for="nome">Nome:</label>
 			<!-- identifica no formulário o campo--> 
-			<input type="text" id="nome" name="nome">
+			<input type="text" id="nome" name="nome" autocomplete="on" required>
 			<!-- de onde recebe a informação.-->
 			<br><br>
 
 			<label for="senha">Senha:</label>
-			<input type="password" id="senha" name="senha">
+			<input type="password" id="senha" name="senha" name="senha" placeholder="Digite sua senha" >
 			<br><br>
 
 			<label for="dt_nasc">Data de Nascimento:</label>
@@ -29,7 +29,7 @@
 			<input type="number" id="idade" name="idade" value="18" min="18" max="35" step="2">
 			<br><br>
 
-			<!-- step serve para adiantar de 2 em 2 e assim sucessivamente-- min idade minima e max idade maxima, value o valor que já vai começar, obs: step não se usa em boas práticas-->
+<!-- step serve para adiantar de 2 em 2 e assim sucessivamente-- min idade minima e max idade maxima, value o valor que já vai começar e é quem vai enviar a resposta, obs: step não se usa em boas práticas-->
 
 			<label for="nota">Nota para página:</label>
 			<input type="range" id="nota" name="nota" value="0" min="5" max="10">
@@ -37,6 +37,24 @@
 
 			<label for="email">E-mail:</label>
 			<input type="email" id="email" name="email">
+			<br><br>
+
+			<label for="cidade">Cidade:</label>
+			<select id="cidade" name="cidade">
+				<option disabled selected>Selecione uma cidade</option>
+				<optgroup label="RN">
+					<option value="nat">Natal</option>
+					<option value="mos">Mossoró</option>
+				</optgroup>	
+				<optgroup label="PE">
+					<option value="rec">Recife</option>
+					<option value="car">Caruaru</option>
+				</optgroup>
+				<optgroup label="DF">
+				<option value="bsb">Brasília</option>
+				</optgroup>
+				<option value="poa">Porto Alegre</option>
+			</select>
 			<br><br>
 
 			<fieldset>
@@ -72,9 +90,21 @@
 			</fieldset>
 			<br><br>
 
-			<!-- se não colocar dentro do label, teria que marcar exatamente no quadrado e não no nome (obs: para o campo já aparecer marcado colocar checked-->
+<!-- se não colocar dentro do label, teria que marcar exatamente no quadrado e não no nome (obs: para o campo já aparecer marcado colocar checked-->
+
+			<label for="descricao">Descrição:</label>
+			<br>
+			<textarea id="descricao" name="descricao" name="descricao" placeholder="Digite sua mensagem" 
+				cols="30" rows="5" style="resize: none;" 
+			></textarea>
+			<br><br>
+
+<!-- o controle de redimensionamento do textarea é feito no css-->			
+			<input type="file" name="foto">
+			<br><br>
 
 			<button type="submit">Enviar</button>
+			<button type="reset">Limpar</button>
 		</form>
 	</body>
 </html>
