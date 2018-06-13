@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Trabalhando com DIVs</title>
+    <style>
+        * {
+            margin: 0px; 
+            padding: 0px;
+        }
+
+        #div1 {
+            background-color: aqua;
+            position: sticky;
+            top: 0;
+
+        }
+
+        #div2 {
+            background-color: yellowgreen;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 30px;
+            height: 1000px;
+            position: relative;
+            z-index: -1;
+         
+        
+        }
+
+        #div3 {
+            background-color: orchid;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+
+        }
+
+        #divinha {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+<!--AS DIVS SEMPRE SERÃO UMA ABAIXO DA OUTRA-->
+    <h1>Exemplo de sticky</h1>
+    <div id="div1">DIV 01</div>
+    <div id="div2">DIV 02
+        <div id="divinha">DIVINHA</div> 
+    </div>
+    <div id="div3">DIV 03</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tabelas</title>
+
+		<style type="text/css">
+			table, td, th {
+				border: 1px solid red;
+				border-collapse: collapse;  
+			}
+		</style>
+	</head>
+	<!-- tr (table row); td (table data); th (cabeçario que vai ficar centralizado e negrito) border-collapse pra juntar a tabela; colspan (mesclar colunas) rowspan (mesclar linhas);-->
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<td style="text-align: center" colspan="4">Tabela de Clientes</td>
+					<!-- para mesclar linha de cima -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Id</th>
+					<th>Nome</th>
+					<th>Nascimento</th>
+					<th>Sexo</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Kellve Vasconcelos</td>
+					<td>03/10/1990</td>
+					<td>Masculino</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Geordano Rodrigues</td>
+					<td>18/07/1988</td>
+					<td>Masculino</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Elvira Marques</td>
+					<td>16/11/1972</td>
+					<td>Feminino</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Total</td>
+					<td colspan="3">3</td>
+					<!-- Expandir linha de baixo -->
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
